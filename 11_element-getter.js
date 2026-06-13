@@ -33,4 +33,4 @@ let index = 3;
 
 console.log(getFirstElement(data));
 console.log(getLastElement(data));
-console.log(getElementByIndex(data,index))
+console.log(getElementByIndex(data,index));

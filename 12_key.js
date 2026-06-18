@@ -7,10 +7,26 @@ const getValueFromKey = (obj, key) => {
     return obj[key];
 }
 
-const Person = {
-    name:"Peter",
+
+//  add value to keys
+const addKeyValuePairs = (obj, newPairs) => {
+    if (newPairs === 0){
+        return undefined
+    }
+
+    return {
+        ...obj,
+        ...newPairs
+    };
 }
 
-console.log(getValueFromKey(Person,"name"))
+const location = {
+  city: 'Tallinn',
+  country: 'Estonia',
+}
 
-console.log(getValueFromKey(Person,"city"))
+console.log(getValueFromKey(location, 'city'))
+console.log(getValueFromKey(location, 'continent'))
+
+console.log(addKeyValuePairs(location, { airports: ['TLL']}))
+console.log(addKeyValuePairs(location, { highestElevation: 64 }))

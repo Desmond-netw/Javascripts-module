@@ -1,0 +1,25 @@
+/* Container for the chessboard */
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  width: 480px;      /* 8 * 60px */
+  height: 480px;
+  border: 4px solid #333;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  margin: 20px auto;
+}
+
+/* Each square */
+.square {
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+/* Optional: hover effect */
+.square:hover {
+  filter: brightness(0.95);
+}

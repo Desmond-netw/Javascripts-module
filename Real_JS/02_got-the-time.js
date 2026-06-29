@@ -31,8 +31,6 @@ function printPrettyDate (date) {
   const seconds = String(date.getUTCSeconds()).padStart(2, '0');
 
 
-
-
     console.log( `Today is ${dayName}, ${monthName} ${dayNum}, ${year},` + ` and the time is ${formattedHours}:${minutes}:${seconds} ${ampm}.`)
 
 
